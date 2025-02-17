@@ -9,7 +9,7 @@
     <title> Google clone</title>
 </head>
 <body class="bg-gray-250">
-    <header>
+    <header class="h-16">
         <div class="flex">
             <img class="w-8 h-8 m-4 p-1 mr-2 cursor-pointer bg-white-500 hover:bg-gray-300 rounded-2xl" src="menu-icon.svg" alt="menu-icon">
             <img class="w-12 h-12 ml-0 mt-1.5" src="logo.png" alt="logo">
@@ -21,68 +21,72 @@
             </div>
         </div>
     </header>
-    <aside class="w-60  h-screen    ">
-            <button class="bg-gray-300 flex ml-5 mt-3 p-3 rounded-2xl text-lg border-none">
-                <img class="mr-2" src="add.svg" alt=""> Create</button>
-        </div>
-            <div class="  rounded-xl p-1 mt-4 ml-5 mb-0">
-                <button class="flex">
-                    <img class="mr-4" src="addtask.svg" alt=""> All tasks
+    <div class=" flex ">
+        <aside class=" flex ">
+                <button class="bg-gray-300 flex ml-5  p-3 rounded-2xl text-lg border-none">
+                    <img class="mr-2" src="add.svg" alt=""> Create</button>
+            </div>
+                <div class="  rounded-xl p-1 mt-4 ml-5 mb-0">
+                    <button class="flex">
+                        <img class="mr-4" src="addtask.svg" alt=""> All tasks
+                    </button>
+    
+                </div>
+                <div class=" rounded-xl p-1 ml-5 mt-0">
+                    <button class="flex">
+                        <img class="mr-4" src="star.svg" alt="">Starred</button>
+                </div>
+                <div class="  rounded-xl p-2 mt-2 ml-3" >
+                    <button class="  flex mr-4 pl-3">
+                        List
+                        <img class="ml-38" src="drrow.svg" alt="dropdown">
+                    </button>
+                    
+                </div>
+                <div class="flex  mt-2 rounded-xl ml-5">
+                    <button class="flex p-2" >
+                        <img class="mr-4" src="checkbox.svg" alt="checkbox">
+                        My Tasks
+    
+                    </button>
+    
+                </div>
+                <div class="flex rounded-xl  mt-1 ml-5">
+                    <button class="flex p-2 ">
+                        <img class="mr-2" src="add.svg" alt="add">
+                        Create new List
+                    </button>
+                </div>       
+            </aside>
+    </div>
+    
+    <main class="flex-1 ml-60 p-8 mt-4 md:ml-0 ">
+        <div class=" max-w-2xl min-w-[360px] mx-auto p-6 rounded-xl shadow-2xl  -mt-77">
+           
+                <div class="flex justify-between items-start">
+                  <h2 class="text-lg font-semibold">My Tasks</h2>
+                  <button class="text-gray-400 hover:text-gray-200">⋮</button>
+                </div>
+              
+                <button class="flex items-center text-blue-400 hover:text-blue-300 mt-4">
+                  <span class="text-lg">
+                    <img src="addtask.svg" alt=""></span>
+                  <span class="ml-2">Add a task</span>
                 </button>
+              
+                <div class="flex flex-col items-center justify-center mt-20">
+                  <img src="pg.png" class="w-35 h-30" alt="Task Icon" />
+                  <h3 class="text-lg mt-4">No tasks yet</h3>
+                  <p class="text-black-400 text-center mt-2 text-sm">
+                    Add your to-dos and keep track of 
+                    <br>them across Google Workspace
+                  </p>
+                </div>
+             
+              </div>
+              
 
-            </div>
-            <div class=" rounded-xl p-1 ml-5 mt-0">
-                <button class="flex">
-                    <img class="mr-4" src="star.svg" alt="">Starred</button>
-            </div>
-            <div class="  rounded-xl p-2 mt-2 ml-3" >
-                <button class="  flex mr-4 pl-3">
-                    List
-                    <img class="ml-38" src="drrow.svg" alt="dropdown">
-                </button>
-                
-            </div>
-            <div class="flex  mt-2 rounded-xl ml-5">
-                <button class="flex p-2" >
-                    <img class="mr-4" src="checkbox.svg" alt="checkbox">
-                    My Tasks
-
-                </button>
-
-            </div>
-            <div class="flex rounded-xl  mt-1 ml-5">
-                <button class="flex p-2 ">
-                    <img class="mr-2" src="add.svg" alt="add">
-                    Create new List
-                </button>
-            </div>       
-        </aside>
-
-
-       <div class=" flex items-center justify-center min-h-screen  -mt-185 ml-9 ">
-        <div class="w-2.5/4 w-2xl bg-white text-black p-6 rounded-xl shadow-2xl ml-9 h-110">
-            <div class="flex justify-between items-start">
-              <h2 class="text-lg font-semibold">My Tasks</h2>
-              <button class="text-gray-400 hover:text-gray-200">⋮</button>
-            </div>
-          
-            <button class="flex items-center text-blue-400 hover:text-blue-300 mt-4">
-              <span class="text-lg">
-                <img src="addtask.svg" alt=""></span>
-              <span class="ml-2">Add a task</span>
-            </button>
-          
-            <div class="flex flex-col items-center justify-center mt-20">
-              <img src="pg.png" class="w-35 h-30" alt="Task Icon" />
-              <h3 class="text-lg mt-4">No tasks yet</h3>
-              <p class="text-black-400 text-center mt-2 text-sm">
-                Add your to-dos and keep track of 
-                <br>them across Google Workspace
-              </p>
-            </div>
-          </div>
-          </div>
-          
+    </main>
           
     
           
